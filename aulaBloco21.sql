@@ -212,3 +212,6 @@ SELECT RAND();
 SELECT ROUND(7 + (RAND() * 6));
 
 -- O cálculo que é feito é o seguinte: (7 + (0.0 a 1.0 * 6))
+
+-- Monte uma query que gere um valor entre 15 e 20:
+SELECT ROUND(15 + (RAND() * 5));
