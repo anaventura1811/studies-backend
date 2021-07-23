@@ -272,3 +272,6 @@ SELECT COUNT(replacement_cost) FROM sakila.film; -- 1000 registros encontrados (
 -- Exercícios de fixação sobre Funções de Agregação:
 -- 1 - A média de duração dos filmes e dê o nome da coluna de 'Média de Duração'
 SELECT AVG(length) AS 'Média de Duração' FROM sakila.film;
+
+-- 2 - A duração mínima dos filmes como 'Duração Mínima';
+SELECT MIN(length) AS 'Duração Mínima' FROM sakila.film;
