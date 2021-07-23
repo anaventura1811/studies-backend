@@ -49,3 +49,24 @@ SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', 12, 11);
 
 -- Exercício 5
 SELECT LCASE('RUA NORTE 1500, SÃO PAULO, BRASIL');
+
+-- Aula:
+SELECT IF (rental_rate > 0.99, 'CARO', 'BARATO')
+AS classificacao_rentals 
+FROM sakila.film
+LIMIT 12;
+
+SELECT title, IF (rental_rate > 0.99, 'CARO', 'BARATO')
+AS rentals_price_range
+FROM sakila.film
+LIMIT 12;
+
+SELECT title, rental_rate,
+  CASE
+    WHEN rental_rate = 0.99 THEN 'Barato'
+    WHEN rental_rate = 2.99 THEN 'Médio'
+    WHEN rental_rate = 4.99 THEN 'Caro'
+  ELSE rental_rate = 'Não classificado'
+  END AS valor
+FROM sakila.film
+LIMIT 10;
