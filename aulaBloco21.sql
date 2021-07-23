@@ -184,3 +184,8 @@ SELECT ROUND(10.5136); -- 11
 SELECT ROUND(-10.5136); -- -11
 SELECT ROUND(10.4925, 2); -- 10.49
 SELECT ROUND(10.4925, 3); -- 10.493
+
+-- Pode ser feito arrendondamento para cima com CEIL:
+SELECT CEIL(10.51); -- 11
+SELECT CEIL(10.49); -- 11
+SELECT CEIL(10.2); -- 11
