@@ -172,6 +172,7 @@ AS 'par_ou_ímpar';
 
 --> Desafio 2:
 SELECT CASE
-	WHEN (220 MOD 12) > 0 THEN (220 DIV 12) + (220 MOD 12)
+	WHEN (220 MOD 12) > 0 AND (220 MOD 12 <= 12 )THEN (220 DIV 12) + 1
+    WHEN (220 MOD 12) > 0 AND (220 MOD 12 > 12 AND 220 MOD 12 <= 24)  THEN (220 DIV 12) + 2
     ELSE 'Podemos levar' + (220 DIV 12)
-    END AS 'podemos levar ao cinema o seguinte número de grupos completos';
+    END AS 'podemos levar o seguinte número de grupos completos';
