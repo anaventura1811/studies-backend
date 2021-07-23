@@ -253,3 +253,7 @@ SELECT SECOND(data_cadastro); -- Segundo
 -- CurrentDate e Now para encontrar datas e horários de forma dinâmica:
 SELECT YEAR(CURRENT_DATE()); -- retorna o ano atual
 SELECT HOUR(NOW()); -- retorna a hora atual
+
+-- Exercícios de Fixação sobre Datas:
+-- 1 - Monte uma query que exiba a diferença de dias entre '2030-01-20' e hoje.
+SELECT DATEDIFF('2030-01-20', '2021-07-23');
