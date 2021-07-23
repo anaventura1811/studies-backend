@@ -164,3 +164,8 @@ SELECT 10 MOD 2; -- 0
 SELECT 14 MOD 3; -- 2
 SELECT 13 MOD 2; -- 1
 SELECT 10.5 MOD 2; -- 0.5, ou seja, 2 + 2 + 2 + 2 + 2 = 10, restando 0.5
+
+-- Desafios com DIV e MOD:
+--> Desafio 1
+SELECT IF (15 MOD 2 = 0, 'É par', 'É ímpar')
+AS 'par_ou_ímpar';
