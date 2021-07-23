@@ -29,3 +29,10 @@ LIMIT 10;
 SELECT rating, MAX(rental_rate)
 FROM sakila.film
 GROUP BY rating;
+
+-- GROUP BY + HAVING:
+SELECT district, COUNT(*)
+AS 'numero_de_endereços_registrados'
+FROM sakila.address
+GROUP BY district
+HAVING COUNT(*) >= 5;
