@@ -16,4 +16,8 @@ IF
       "Olá, vc é um cliente precioso!!")
 FROM 
   sakila.customer;
-  
+
+SELECT DATEDIFF(return_date, rental_date)
+  AS rental_duration
+FROM sakila.rental
+LIMIT 10;
