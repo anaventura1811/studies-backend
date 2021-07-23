@@ -16,3 +16,4 @@ IF
       "Olá, vc é um cliente precioso!!")
 FROM 
   sakila.customer;
+  
