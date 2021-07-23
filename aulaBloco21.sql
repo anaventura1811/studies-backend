@@ -140,3 +140,9 @@ SELECT title, rating,
 	ELSE 'Proibido para menores de idade'
 END AS 'público_alvo'
 FROM sakila.film;
+
+-- Adição, subtração, multiplicação e divisão usando sql
+SELECT 5 + 5;
+SELECT 5 - 5;
+SELECT 5 * 5;
+SELECT 5 / 5;
