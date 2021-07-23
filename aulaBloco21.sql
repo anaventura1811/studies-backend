@@ -241,3 +241,15 @@ SELECT DATEDIFF('2020-01-01', '2020-01-31');
 -- -01:00:00, ou seja, há 1 hora de diferença entre os horários
 SELECT TIMEDIFF('08:30:10', '09:30:10');
 
+-- Podemos extrair qualquer parte de uma data de uma coluna:
+SELECT DATE(data_cadastro); -- YYYY-MM-DD
+SELECT YEAR(data_cadastro); -- Ano
+SELECT MONTH(data_cadastro); -- Mês
+SELECT DAY(data_cadastro); -- Dia
+SELECT HOUR(data_cadastro); -- Hora
+SELECT MINUTE(data_cadastro); -- Minuto
+SELECT SECOND(data_cadastro); -- Segundo
+
+-- CurrentDate e Now para encontrar datas e horários de forma dinâmica:
+SELECT YEAR(CURRENT_DATE()); -- retorna o ano atual
+SELECT HOUR(NOW()); -- retorna a hora atual
