@@ -260,3 +260,15 @@ SELECT DATEDIFF('2030-01-20', '2021-07-23');
 
 -- 2 - Monte uma query exiba a diferença de horas entre '10:25:45' e '11:00:00' 
 SELECT TIMEDIFF('10:25:45', '11:00:00');
+
+-- Funções de agregação: SUM, AVG, COUNT, MIN, MAX:
+-- Usando a coluna replacement_cost (valor de substituição) vamos encontrar:
+SELECT AVG(replacement_cost) FROM sakila.film; -- 19.984000 (Média entre todos registros)
+SELECT MIN(replacement_cost) FROM sakila.film; -- 9.99 (Menor valor encontrado)
+SELECT MAX(replacement_cost) FROM sakila.film; -- 29.99 (Maior valor encontrado)
+SELECT SUM(replacement_cost) FROM sakila.film; -- 19984.00 (Soma de todos registros)
+SELECT COUNT(replacement_cost) FROM sakila.film; -- 1000 registros encontrados (Quantidade)
+
+-- Exercícios de fixação sobre Funções de Agregação:
+-- 1 - A média de duração dos filmes e dê o nome da coluna de 'Média de Duração'
+SELECT AVG(length) AS 'Média de Duração' FROM sakila.film;
