@@ -275,3 +275,6 @@ SELECT AVG(length) AS 'Média de Duração' FROM sakila.film;
 
 -- 2 - A duração mínima dos filmes como 'Duração Mínima';
 SELECT MIN(length) AS 'Duração Mínima' FROM sakila.film;
+
+-- 3 - A duração máxima dos filmes como 'Duração Máxima';
+SELECT MAX(length) AS 'Duração Máxima' FROM sakila.film;
