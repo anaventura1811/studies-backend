@@ -43,3 +43,6 @@ SELECT REPLACE('Você já ouviu falar do DuckDuckGo?', 'DuckDuckGo', 'Google');
 
 -- Exercício 3
 SELECT LENGTH('Uma frase qualquer');
+
+-- Exercício 4
+SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', 12, 11);
