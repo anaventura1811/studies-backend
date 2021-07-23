@@ -40,3 +40,6 @@ SELECT UCASE('trybe');
 
 -- Exercício 2
 SELECT REPLACE('Você já ouviu falar do DuckDuckGo?', 'DuckDuckGo', 'Google');
+
+-- Exercício 3
+SELECT LENGTH('Uma frase qualquer');
