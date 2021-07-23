@@ -169,3 +169,9 @@ SELECT 10.5 MOD 2; -- 0.5, ou seja, 2 + 2 + 2 + 2 + 2 = 10, restando 0.5
 --> Desafio 1
 SELECT IF (15 MOD 2 = 0, 'É par', 'É ímpar')
 AS 'par_ou_ímpar';
+
+--> Desafio 2:
+SELECT CASE
+	WHEN (220 MOD 12) > 0 THEN (220 DIV 12) + (220 MOD 12)
+    ELSE 'Podemos levar' + (220 DIV 12)
+    END AS 'podemos levar ao cinema o seguinte número de grupos completos';
