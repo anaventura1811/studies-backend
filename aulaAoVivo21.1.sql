@@ -1,4 +1,6 @@
 -- Queries da Aula ao Vivo
+
+-- CONCAT, IF
 SELECT
   customer_id,
 CONCAT
@@ -17,7 +19,13 @@ IF
 FROM 
   sakila.customer;
 
+-- DATEDIFF
 SELECT DATEDIFF(return_date, rental_date)
   AS rental_duration
 FROM sakila.rental
 LIMIT 10;
+
+-- GROUP BY:
+SELECT rating, MAX(rental_rate)
+FROM sakila.film
+GROUP BY rating;
