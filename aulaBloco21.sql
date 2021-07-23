@@ -227,5 +227,8 @@ SELECT FLOOR(39.494);
 -- Qual é o valor aproximado para cima dessa média?
 SELECT CEIL(85.234);
 
+-- Datas:
+SELECT CURRENT_DATE(); -- YYYY-MM-DD
+SELECT NOW(); -- YYYY-MM-DD HH:MM:SS
 
 
