@@ -10,8 +10,12 @@ app.get("/", function(req, res) {
 		{ title: 'Titulo', message: 'teste' },
 		{ title: 'Titulo', message: 'teste' },
 	];
+
+  const subtitle = "Uma linguagem de modelagem para criação de páginas HTML com JS";
+
   res.render("pages/index", {
     qualidades: items,
+    subtitle: subtitle,
   });
 });
 
