@@ -1,0 +1,15 @@
+{
+  "name": "aprendendo-node",
+  "version": "1.0.0",
+  "description": "estudos de node",
+  "main": "console.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "key-words": [
+    "learning",
+    "nodejs"
+  ],
+  "author": "Ana Ventura",
+  "license": "ISC"
+}
