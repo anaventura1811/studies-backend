@@ -4,7 +4,7 @@
   "description": "estudos de node",
   "main": "console.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node console"
   },
   "key-words": [
     "learning",
