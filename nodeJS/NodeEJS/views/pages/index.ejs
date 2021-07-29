@@ -9,6 +9,20 @@
         <h1>Entendendo Node com EJS</h1>
         <p>Minha primeira página utilizando Node e EJS</p>
     </div>
+
+    <ul>
+      <li>
+        <strong>Título</strong> Mensagem
+      </li>
+      <% qualidades.forEach(function(qualidade){%>
+        <li>
+          <strong><%= qualidade.title %></strong>
+          <p>
+            <%= qualidade.message %>
+          </p>
+        </li>
+     <% }) %>
+    </ul>
   </main>
   <%- include('../partials/footer'); %>
 </body>

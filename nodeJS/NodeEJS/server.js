@@ -3,7 +3,16 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-  res.render("pages/index");
+  const items = [
+		{ title: 'Titulo', message: 'teste' },
+		{ title: 'Titulo', message: 'teste' },
+		{ title: 'Titulo', message: 'teste' },
+		{ title: 'Titulo', message: 'teste' },
+		{ title: 'Titulo', message: 'teste' },
+	];
+  res.render("pages/index", {
+    qualidades: items,
+  });
 });
 
 app.get("/about", function(req, res) {
